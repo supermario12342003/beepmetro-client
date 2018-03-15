@@ -11,7 +11,6 @@ import { SampleComponent } from './sample/sample.component';
 
 @NgModule({
   imports: [
-    CommonModule,
     SharedModule,
     AgmCoreModule,
   ],

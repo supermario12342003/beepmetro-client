@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService }       from '@app/features/user';
+import { UserService }       from '@app/core/services';
 
 @Component({
   selector: 'app-landing',

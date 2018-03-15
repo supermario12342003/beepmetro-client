@@ -22,8 +22,8 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   imports: [
     AppRoutingModule,
-    CoreModule, //generic module like BrowserModule, FormModule, RouterModule... anything that most other modules use
-    SharedModule,
+    CoreModule, //all services
+    SharedModule, //generic module like BrowserModule, FormModule, RouterModule... anything that most other modules use
     PagesModule, //pages
     AgmCoreModule.forRoot({apiKey: environment.googleMapApiKey,}),
     SidebarModule.forRoot(),

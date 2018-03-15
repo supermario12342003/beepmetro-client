@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 import { TestComponent } from './test/test.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
@@ -10,6 +13,8 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     TranslateModule.forChild(),
+    RouterModule,
+    FormsModule,
   ],
   declarations: [
     TestComponent,
@@ -17,6 +22,8 @@ import { TranslateModule } from '@ngx-translate/core';
     FooterComponent
   ],
   exports: [
+    RouterModule,
+    FormsModule,
     TestComponent,
     NavbarComponent,
     FooterComponent,

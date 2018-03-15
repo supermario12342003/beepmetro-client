@@ -1,22 +1,17 @@
 import { ModuleWithProviders, NgModule, Optional, SkipSelf } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
-import { UserService } from '@app/features/user';
-import { WebsocketService } from './services';
+import { BrowserModule } from '@angular/platform-browser';
+import { WebsocketService, UserService } from './services';
 
 @NgModule({
   imports: [
+    HttpModule,
+    HttpClientModule,
   ],
   declarations: [],
   exports: [
     BrowserModule,
-    FormsModule,
-    HttpModule,
-    RouterModule,
-    HttpClientModule,
   ],
   providers: [
     //all service here

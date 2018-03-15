@@ -12,9 +12,5 @@ export class WebsocketService {
     else {
       var socket = io();
     }
-    socket.on('time', function(timeString) {
-      console.log('Server time: ' + timeString);
-    });
-
   }
 }
